@@ -7,8 +7,8 @@ authors = ["acrius <acrius@mail.ru>"]
 
 readme = 'README.rst'
 
-repository = "https://github.com/acrius/django-snippet-image"
-homepage = "https://github.com/acrius/django-snippet-image"
+repository = "https://github.com/acrius/wagtail-snippet-image"
+homepage = "https://github.com/acrius/wagtail-snippet-image"
 
 [tool.poetry.dependencies]
 python = "^3.5"

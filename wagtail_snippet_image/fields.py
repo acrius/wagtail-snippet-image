@@ -61,7 +61,7 @@ class SnippetImageField(BaseSnippetImageFieldMixin, ForeignKey):
         return image_pk
 
     def save_form_data(self, instance, image):
-        if not image or not image.file and self.should_be_created(instance):
+        if (not image or not image.file) and self.should_be_created(instance):
             image = self.create_image(instance)
 
         super().save_form_data(instance, image)

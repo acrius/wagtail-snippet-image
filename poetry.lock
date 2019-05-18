@@ -51,7 +51,7 @@ description = "Django field for create snippet image for sharing in social netwo
 name = "django-snippet-image"
 optional = false
 python-versions = ">=3.5,<4.0"
-version = "0.1.2"
+version = "0.1.3"
 
 [package.dependencies]
 django = ">=1.11,<3.0"
@@ -229,8 +229,8 @@ python-versions = "*"
 version = "1.1"
 
 [metadata]
-content-hash = "71d420604888b60fc0b40b02125a0dedde8d00f279be2c717d10dd997cb1fbf2"
-python-versions = "^3.7"
+content-hash = "7914a5a597968f9f346ba6ba93586d80ed022404417e208a6473b822075d7b36"
+python-versions = "^3.5"
 
 [metadata.hashes]
 beautifulsoup4 = ["11a9a27b7d3bddc6d86f59fb76afb70e921a25ac2d6cc55b40d072bd68435a76", "7015e76bf32f1f574636c4288399a6de66ce08fb7b2457f628a8d70c0fbabb11", "808b6ac932dccb0a4126558f7dfdcf41710dd44a4ef497a0bb59a77f9f078e89"]
@@ -238,7 +238,7 @@ certifi = ["59b7658e26ca9c7339e00f8f4636cdfe59d34fa37b9b04f6f9e9926b3cece1a5", "
 chardet = ["84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae", "fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"]
 django = ["6fcc3cbd55b16f9a01f37de8bcbe286e0ea22e87096557f1511051780338eaea", "bb407d0bb46395ca1241f829f5bd03f7e482f97f7d1936e26e98dacb201ed4ec"]
 django-modelcluster = ["59672386191d38c69d6f994c3f9aaab3ff93910ec71e78a0bb6aa9abd4d1b90a", "eea507f2dd8bd283600c1cfa4de6776501a28f199089bb00613c1621505e80cc"]
-django-snippet-image = ["704739d59e58d316d4318d7186d260722027f189cff26943ac93a398790ed81a", "a25cb65269f6d2772975ebfde95f578e33747f9bcebc16adf95690470cbba07b"]
+django-snippet-image = ["73e03935f5d9b1ba0d29b9ab57a22162573c4380370b8abbdf276b265fbc75a2", "b57bb861318a76814b3ddb4fed5df002f3debe01c5df81356ae1d778ef9fc84c"]
 django-taggit = ["710b4d15ec1996550cc68a0abbc41903ca7d832540e52b1336e6858737e410d8", "bb8f27684814cd1414b2af75b857b5e26a40912631904038a7ecacd2bfafc3ac"]
 django-treebeard = ["c21db06a8d4943bf2a28d9d7a119058698fb76116df2679ecbf15a46a501de42"]
 djangorestframework = ["376f4b50340a46c15ae15ddd0c853085f4e66058f97e4dbe7d43ed62f5e60651", "c12869cfd83c33d579b17b3cb28a2ae7322a53c3ce85580c2a2ebe4e3f56c4fb"]

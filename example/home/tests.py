@@ -36,7 +36,7 @@ class SnippetImageTestCase(TestCase):
         self.background.save()
 
     def test_version(self):
-        self.assertEqual(__version__, '0.1.1')
+        self.assertEqual(__version__, '0.1.2')
 
     def test_should_be_created(self):
         instance = HomePage(

@@ -17,7 +17,9 @@ class SnippetImageField(BaseSnippetImageFieldMixin, ForeignKey):
             snippet_type='default',
             **kwargs
     ):
-        self.kwargs = kwargs
+        self.kwargs = self.extract_specific_kwargs(kwargs)
+        image_description_kwargs = self.extract_image_description_kwargs(kwargs)
+        self.kwargs.update(image_description_kwargs)
         self.snippet_type = snippet_type
         kwargs['related_name'] = kwargs.get('related_name') or '{}_{}'.format(snippet_type, self.default_related_prefix)
         kwargs['on_delete'] = kwargs.get('on_delete') or SET_NULL
@@ -28,6 +30,9 @@ class SnippetImageField(BaseSnippetImageFieldMixin, ForeignKey):
             to='wagtailimages.Image',
             **kwargs
         )
+
+    def extract_image_description_kwargs(self, kwargs):
+        return self.extract_kwargs(kwargs, ImageDescriptionAttributes)
 
     def get_image_description(self, instance):
         description = {
